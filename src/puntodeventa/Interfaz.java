@@ -27,8 +27,122 @@ public class Interfaz extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        IngresasUsuario = new javax.swing.JDialog();
+        jPanel2 = new javax.swing.JPanel();
+        Usuario = new javax.swing.JLabel();
+        Titulo = new javax.swing.JLabel();
+        contraseñaU1 = new javax.swing.JLabel();
+        descripción = new javax.swing.JLabel();
+        ContraseñaU = new javax.swing.JPasswordField();
+        InsertarU = new javax.swing.JComboBox<>();
+        ingresar = new javax.swing.JButton();
+        cancelarIng = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         Nombre = new javax.swing.JTextField();
+
+        jPanel2.setBackground(new java.awt.Color(153, 204, 255));
+
+        Usuario.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        Usuario.setText("Usuario");
+
+        Titulo.setFont(new java.awt.Font("Times New Roman", 0, 36)); // NOI18N
+        Titulo.setText("Punto de Venta");
+
+        contraseñaU1.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        contraseñaU1.setText("Contraseña");
+
+        descripción.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        descripción.setText("Inicie sesión registrando lo siguiente");
+
+        ContraseñaU.setText("jPasswordField1");
+
+        InsertarU.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        InsertarU.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                InsertarUActionPerformed(evt);
+            }
+        });
+
+        ingresar.setText("Iniciar sesión");
+        ingresar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ingresarActionPerformed(evt);
+            }
+        });
+
+        cancelarIng.setText("Cancelar");
+        cancelarIng.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cancelarIngActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(74, 74, 74)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(ingresar)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 55, Short.MAX_VALUE)
+                        .addComponent(cancelarIng)
+                        .addGap(97, 97, 97))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(contraseñaU1)
+                            .addComponent(Usuario))
+                        .addGap(35, 35, 35)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(ContraseñaU)
+                            .addComponent(InsertarU, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(Titulo))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(85, 85, 85)
+                        .addComponent(descripción)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addComponent(Titulo)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(descripción)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(30, 30, 30)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Usuario)
+                            .addComponent(InsertarU, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(contraseñaU1)
+                            .addComponent(ContraseñaU, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap(127, Short.MAX_VALUE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(cancelarIng)
+                            .addComponent(ingresar))
+                        .addGap(54, 54, 54))))
+        );
+
+        javax.swing.GroupLayout IngresasUsuarioLayout = new javax.swing.GroupLayout(IngresasUsuario.getContentPane());
+        IngresasUsuario.getContentPane().setLayout(IngresasUsuarioLayout);
+        IngresasUsuarioLayout.setHorizontalGroup(
+            IngresasUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        IngresasUsuarioLayout.setVerticalGroup(
+            IngresasUsuarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -63,6 +177,18 @@ public class Interfaz extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void ingresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ingresarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ingresarActionPerformed
+
+    private void cancelarIngActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancelarIngActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cancelarIngActionPerformed
+
+    private void InsertarUActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InsertarUActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_InsertarUActionPerformed
 
     /**
      * @param args the command line arguments
@@ -100,7 +226,17 @@ public class Interfaz extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPasswordField ContraseñaU;
+    private javax.swing.JDialog IngresasUsuario;
+    private javax.swing.JComboBox<String> InsertarU;
     private javax.swing.JTextField Nombre;
+    private javax.swing.JLabel Titulo;
+    private javax.swing.JLabel Usuario;
+    private javax.swing.JButton cancelarIng;
+    private javax.swing.JLabel contraseñaU1;
+    private javax.swing.JLabel descripción;
+    private javax.swing.JButton ingresar;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
 }
