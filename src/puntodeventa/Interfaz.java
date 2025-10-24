@@ -56,6 +56,9 @@ public class Interfaz extends javax.swing.JFrame {
         MontoInicial = new javax.swing.JTextField();
         mensajeDinero = new javax.swing.JLabel();
         registroDinero = new javax.swing.JButton();
+        Inventario = new javax.swing.JDialog();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
         jPanel1 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
@@ -84,7 +87,6 @@ public class Interfaz extends javax.swing.JFrame {
         jButton13 = new javax.swing.JButton();
 
         IngresasUsuario.setTitle("Login");
-        IngresasUsuario.setPreferredSize(new java.awt.Dimension(450, 350));
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -106,8 +108,6 @@ public class Interfaz extends javax.swing.JFrame {
         jLabel7.setForeground(new java.awt.Color(0, 0, 102));
         jLabel7.setText("Punto de Venta");
 
-        jLabel9.setIcon(new javax.swing.ImageIcon("C:\\Users\\aleja\\Documents\\NetBeansProjects\\PuntoDeVenta\\src\\Icon\\clean (1).png")); // NOI18N
-
         jLabel8.setBackground(new java.awt.Color(0, 0, 102));
         jLabel8.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(0, 0, 102));
@@ -124,8 +124,6 @@ public class Interfaz extends javax.swing.JFrame {
                 jPasswordField1ActionPerformed(evt);
             }
         });
-
-        jLabel11.setIcon(new javax.swing.ImageIcon("C:\\Users\\aleja\\Documents\\NetBeansProjects\\PuntoDeVenta\\src\\Icon\\UNSIS (1).png")); // NOI18N
 
         jLabel12.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(0, 0, 102));
@@ -310,6 +308,49 @@ public class Interfaz extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
+        );
+
+        Inventario.setTitle("INVENTARIO");
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"1", null, null, null, null},
+                {"2", null, null, null, null},
+                {"3", null, null, null, null},
+                {"4", null, null, null, null},
+                {"5", null, null, null, null},
+                {"6", null, null, null, null},
+                {"7", null, null, null, null},
+                {"8", null, null, null, null},
+                {"9", null, null, null, null},
+                {"10", null, null, null, null},
+                {"11", null, null, null, null},
+                {"12", null, null, null, null},
+                {"13", null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
+            },
+            new String [] {
+                "No.", "INSUMOS", "DESCRIPCIÓN", "PRESENTACIÓN", "Total de Piezas"
+            }
+        ));
+        jScrollPane1.setViewportView(jTable1);
+
+        javax.swing.GroupLayout InventarioLayout = new javax.swing.GroupLayout(Inventario.getContentPane());
+        Inventario.getContentPane().setLayout(InventarioLayout);
+        InventarioLayout.setHorizontalGroup(
+            InventarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(InventarioLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 470, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        InventarioLayout.setVerticalGroup(
+            InventarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(InventarioLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -625,6 +666,7 @@ public class Interfaz extends javax.swing.JFrame {
     private javax.swing.JDialog Caja;
     private javax.swing.JButton IngresarApp;
     private javax.swing.JDialog IngresasUsuario;
+    private javax.swing.JDialog Inventario;
     private javax.swing.JTextField MontoInicial;
     private javax.swing.JTextField NombreUsuario;
     private javax.swing.JButton cancelarIngreso;
@@ -664,7 +706,9 @@ public class Interfaz extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPasswordField jPasswordField1;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel mensajeDinero;
     private javax.swing.JButton registroDinero;
