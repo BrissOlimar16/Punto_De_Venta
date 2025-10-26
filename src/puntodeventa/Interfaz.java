@@ -241,11 +241,11 @@ public class Interfaz extends javax.swing.JFrame {
             }
         });
 
-        jLabel27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/puntodeventa/odontologia.png"))); // NOI18N
+        jLabel27.setIcon(new javax.swing.ImageIcon("C:\\Users\\aleja\\Documents\\NetBeansProjects\\PuntoDeVenta\\src\\Icon\\odontologia.png")); // NOI18N
 
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/puntodeventa/avatar (1).png"))); // NOI18N
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icon/avatar (1).png"))); // NOI18N
 
-        jLabel28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/puntodeventa/cerrar.png"))); // NOI18N
+        jLabel28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icon/cerrar.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -364,7 +364,7 @@ public class Interfaz extends javax.swing.JFrame {
 
         jLabel29.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         jLabel29.setForeground(new java.awt.Color(0, 0, 102));
-        jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/puntodeventa/caja-de-efectivo (1).png"))); // NOI18N
+        jLabel29.setIcon(new javax.swing.ImageIcon("C:\\Users\\aleja\\Documents\\NetBeansProjects\\PuntoDeVenta\\src\\Icon\\caja-de-efectivo (1).png")); // NOI18N
         jLabel29.setText("Efectivo en caja");
 
         jPanel7.setBackground(new java.awt.Color(0, 0, 102));
@@ -429,7 +429,7 @@ public class Interfaz extends javax.swing.JFrame {
             CajaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(CajaLayout.createSequentialGroup()
                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 61, Short.MAX_VALUE))
+                .addGap(0, 81, Short.MAX_VALUE))
         );
 
         Inventario.setTitle("INVENTARIO");
@@ -738,7 +738,6 @@ public class Interfaz extends javax.swing.JFrame {
         );
 
         Corte.setTitle("Corte");
-        Corte.setResizable(false);
         Corte.setSize(new java.awt.Dimension(400, 400));
 
         jPanel10.setBackground(new java.awt.Color(255, 255, 255));
@@ -1183,12 +1182,7 @@ public class Interfaz extends javax.swing.JFrame {
 
         btnServicios.setText("Servicios");
 
-        CorteCaja.setText("Corte");
-        CorteCaja.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CorteCajaActionPerformed(evt);
-            }
-        });
+        CorteCaja.setText("jButton8");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -1426,11 +1420,6 @@ public class Interfaz extends javax.swing.JFrame {
         this.setLocationRelativeTo(null);
         this.setVisible(true);
     }//GEN-LAST:event_registroDineroActionPerformed
-
-    private void CorteCajaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CorteCajaActionPerformed
-        Corte.setVisible(true);
-        BusquedaInventario.setLocationRelativeTo(null);
-    }//GEN-LAST:event_CorteCajaActionPerformed
 
     /**
      * @param args the command line arguments
